@@ -1,4 +1,4 @@
-class Onecard {
+public class Onecard {
   
 
     /** to store the name of the card owner */
@@ -38,7 +38,7 @@ class Onecard {
         if (this.canAfford(amt)){
             this.balance += amt;
         }
-        System.out.println(x: "Sorry, insufficient funds:");
+        System.out.println("Sorry, insufficient funds:");
     }
 
 
@@ -53,11 +53,11 @@ class Onecard {
     }
 
     public static void main(String[] args){
-        Onecard myCards - new Onecard(owner: "Priscilla", ID: "9224890", balance: "5")
+        Onecard myCard = new Onecard(owner: "Priscilla", ID: "9224890", balance: "5")
         System.out.println(myCard);
         myCard.deposit(amt: 5.0 );
         System.out.println("AFter deposit:" + myCard.balance);
-        myCArd.spend(amt: 100.00);
+        myCard.spend(amt: 100.00);
         System.out.println(myCard.canAfford(amt: 2.00));
     }
 }
